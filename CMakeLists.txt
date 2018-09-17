@@ -1,16 +1,13 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(lwr_description)
 
-find_package(catkin REQUIRED COMPONENTS
-  robot_state_publisher
-)
-
-catkin_package()
-
-include_directories(
-  ${catkin_INCLUDE_DIRS}
-)
-
+find_package(catkin QUIET)
+if(catkin_FOUND)
+    catkin_package()
+else()
+    set(CATKIN_PACKAGE_SHARE_DESTINATION share/${PROJECT_NAME})
+  endif()
+   
 install(DIRECTORY gazebo/
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/gazebo
   PATTERN ".svn" EXCLUDE)
