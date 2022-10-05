@@ -21,7 +21,7 @@ def generate_launch_description():
             default_value='/',
             description='Robot namespace.'
         ),
-        Node(
+        Node( #TODO: Only start if robot_ns is different from '/', it'll crash otherwise
             package='tf2_ros',
             executable='static_transform_publisher',
             name='world_ns_connector',

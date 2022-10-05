@@ -89,7 +89,7 @@ def generate_launch_description():
         DeclareLaunchArgument(
             name='robot_description',
             default_value=robot_description,
-            description='Description of IIWA Med7 at SU.'
+            description='Description of LWR4+ at SU.'
         )
         ])
         
