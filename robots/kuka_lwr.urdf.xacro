@@ -74,7 +74,7 @@
   </xacro:unless>
 
   <!-- LWR -->
-  <xacro:lwr parent="base_link">
+  <xacro:lwr parent="base_link" robot_name="$(arg robot_name)">
     <origin xyz="0 0 0.02" rpy="0 0 ${2*M_PI/3}" />
   </xacro:lwr>
 
