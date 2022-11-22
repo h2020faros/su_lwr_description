@@ -344,5 +344,12 @@
             </geometry>
          </collision>
       </link>
+      <joint name="${robot_name}_joint_ee" type="fixed">
+         <parent link="F_R${robot_name}_7"/>
+         <child link="F_RE${robot_name}"/>
+         <origin xyz="0 0 0" rpy="0 0 0"/>
+      </joint>
+      <link name="F_RE${robot_name}">
+      </link>
    </xacro:macro>
 </robot>
