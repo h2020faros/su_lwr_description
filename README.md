@@ -1,6 +1,12 @@
 Kuka LWR 4+ Description
 ================
 
+Setup :
+```bash
+sudo apt install ros-foxy-xacro
+```
+----------------
+Usage:
 This package contains the URDF (with inertia matrices) for the Kuka LWR 4+ at ISIR.
 
 ```bash
