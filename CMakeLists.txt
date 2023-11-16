@@ -6,7 +6,7 @@ find_package(ament_cmake REQUIRED)
   
 # install
 install(
-  DIRECTORY gazebo launch meshes robots urdf
+  DIRECTORY gazebo launch meshes robots urdf config
   DESTINATION share/${PROJECT_NAME}
   PATTERN ".svn" EXCLUDE
 )
